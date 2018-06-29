@@ -1,0 +1,24 @@
+datasource:
+  type: com.alibaba.druid.pool.DruidDataSource
+  readSize: 2
+  writeSize: 2
+  master1:
+    url: jdbc:mysql://192.168.56.133:3306/test?characterEncoding=UTF-8&serverTimezone=Hongkong
+    driver-class-name: com.mysql.jdbc.Driver
+    username: root
+    password: root
+  master2:
+    url: jdbc:mysql://192.168.56.133:3306/test?characterEncoding=UTF-8&serverTimezone=Hongkong
+    driver-class-name: com.mysql.jdbc.Driver
+    username: root
+    password: root
+  slave1:
+    url: jdbc:mysql://192.168.56.135:3306/test?characterEncoding=UTF-8&serverTimezone=Hongkong
+    driver-class-name: com.mysql.jdbc.Driver
+    username: root
+    password: root
+  slave2:
+    url: jdbc:mysql://192.168.56.135:3306/test?characterEncoding=UTF-8&serverTimezone=Hongkong
+    driver-class-name: com.mysql.jdbc.Driver
+    username: root
+    password: root
